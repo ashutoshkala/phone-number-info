@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Info</title>
+    <!-- <link rel="stylesheet" href="index.css"> -->
+    <style>
+        body {background-color: powderblue;}
+        h1   {
+            color: blue;
+            font-family: verdana;
+            font-size: 300%;
+            text-align: center;
+        }
+        p    {color: red;}
+        form{
+            text-align: center;
+            color: blue;
+            font-family: verdana;
+            font-size: 120%;
+        }
+        input{
+            font-size: 200%;
+        }
+        button{
+            font-size: 200%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mobile Location and Service Provider Finder</h1>
+    <form action="{{ url_for("no_inp")}}" method="post">
+        <label for="country code">Country code :</label>
+        <input type="text" id="cc" name="cc" placeholder="+91">
+        <label for="firstname">Mobile Number :</label>
+        <input type="text" id="Phno" name="number" placeholder="9840000000">
+        <p></p>
+        <button type="submit">Find </button>
+    
+</body>
+</html>
